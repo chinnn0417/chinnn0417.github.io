@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>Merry Christmas</title>
+        <link rel="stylesheet" href="surprise.css">
+    </head>
+    <body>
+        <script>
+            function rain() {
+                let amount = 200;
+                let body = document.querySelector('body');
+                let i = 0;
+                while (i < amount) {
+                    let drop = document.createElement('i');
+                    let size = Math.random() * 5;
+                    let posX = Math.floor(Math.random() * window.innerWidth);
+                    let delay = Math.random() * -20;
+                    let duration = Math.random() * 5;
+                    drop.style.width = 0.2 + size + 'px';
+                    drop.style.left = posX + 'px';
+                    drop.style.animationDelay = delay + 's';
+                    drop.style.animationDuration = 1 + duration + 's';
+                    body.appendChild(drop);
+                    i += 1;
+                }
+            }
+            rain();
+        </script>
+        <div class="one">
+           <font size="7">Merry Christmas!</font>
+        </div>
+        <div class="heart">
+            <h2>❤️</h2>
+        </div>
+        <div class="heart2">
+            <h2 align="right">❤️</h2>
+        </div>
+        <span class="word">
+            <br>
+            <h2>不知不覺一年又要過了~<br> 
+            是我們在一起後的第二個聖誕節o((>ω< ))o <br>
+            希望往後的每個聖誕節都有你相伴(灬ºωº灬)<br>
+            聖誕節快樂啦啦啦~ love you love you💕 <br>
+            順帶一提，那棵聖誕樹是我畫的! <br>
+            因為我完全看不懂那些厲害的聖誕樹程式碼QQ <br>
+            我只是想說最近剛好在學這個 特別一點 (? <br>
+            雖然找語法眼睛快脫窗 我太難了XD <br>
+            然後好冷 穿多點知道沒,,Ծ‸Ծ,, <br>
+            <br></h2>
+        </span>
+        <img src="https://cdn.discordapp.com/attachments/977849302770647050/1053550994337832970/export202212152145028800.png" 
+         height="1000px">
+    </body>
+</html>
